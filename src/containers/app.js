@@ -1,17 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
-
-import Dashboard from './dashboard';
-import Footer from './footer';
-import DynamicContainer from './dynamicContainer';
+import { Link } from 'react-router';
 
 class App extends React.Component {
     render() {
         return (
             <div className='container-narrow wrapper'>
-                <Dashboard />
-                <DynamicContainer />
-                <Footer />
+             <h4><Link to="/design">Click Here to Design</Link></h4>
             </div>
         );
     }

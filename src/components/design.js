@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Dashboard from '../containers/dashboard';
-import Footer from '../containers/footer';
 import Menu from './menu';
 import Playground from './playground';
 
@@ -21,12 +19,33 @@ class Design extends React.Component {
                               },
                               {
                                   "id": 2,
-                                  "componentName": "Red"
+                                  "componentName": "Circle"
                               },
                               {
                                   "id": 3,
-                                  "componentName": "Green"
+                                  "componentName": "Ellipse"
+                              },
+                              {
+                                "id": 4,
+                                "componentName": "Polygon"
+                              },
+                              {
+                                "id": 5,
+                                "componentName": "Image"
+                              },
+                              {
+                                "id": 6,
+                                "componentName": "Path"
+                              },
+                              {
+                                "id": 7,
+                                "componentName": "Rhombus"
+                              },
+                              {
+                                "id": 8,
+                                "componentName": "TextBlock"
                               }
+
                           ]
                         }pollInterval={2000} />
                     </div>

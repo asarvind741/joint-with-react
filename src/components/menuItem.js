@@ -12,17 +12,16 @@ class MenuItem extends React.Component{
 
     render() {
         return (
-            <a href="#" onClick={this.props.generateEvent}>{this.props.label}</a>
+            <div onClick={this.props.generateEvent} style = {{ 'cursor': 'pointer'}}>{this.props.label}</div>
         );
     }
 
 }
 
-function mapStateToProps(state) {
-    return state;
-}
+
 
 function mapDispatchToProps(dispatch, props) {
+    console.log('cl9icked')
     return {
         generateEvent : function() {
             dispatch(addComponent(props.label));
@@ -30,4 +29,4 @@ function mapDispatchToProps(dispatch, props) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MenuItem)
+export default connect(null, mapDispatchToProps)(MenuItem)

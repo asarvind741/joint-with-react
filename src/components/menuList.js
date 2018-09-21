@@ -7,7 +7,7 @@ class MenuList extends React.Component{
     render() {
         var menuItems = this.props.data.map(function(menuItem) {
             return (
-                <li role="presentation" key={menuItem.id}>
+                <li key={menuItem.id}>
                     <MenuItem label={menuItem.componentName} />
                 </li>
             );

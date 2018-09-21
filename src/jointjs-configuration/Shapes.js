@@ -14,10 +14,10 @@ joint.shapes.customShapes.BaseShape = joint.shapes.devs.Model.extend({
         type: 'devs.Atomic',
         size: { width: 80, height: 80 },
         attrs: {
-            '.body': { fill: 'salmon' },
-            '.label': { text: 'Atomic' },
-            '.inPorts .port-body': { fill: 'PaleGreen' },
-            '.outPorts .port-body': { fill: 'Tomato' }
+            'body': { fill: 'salmon' },
+            'label': { text: 'Card' },
+            'inPorts .port-body': { fill: 'PaleGreen' },
+            'outPorts .port-body': { fill: 'Tomato' }
         }
 
     }, joint.shapes.devs.Model.prototype.defaults)
